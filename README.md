@@ -1,5 +1,6 @@
-# SafeHood-Team
-Projet annuel ESGI SafeHood — présentation générale et architecture
+# SafeHood
+
+Plateforme multiplateforme de gestion et de suivi des alertes de quartier, développée dans le cadre du projet annuel de l’ESGI.
 
 ## Présentation du projet
 
