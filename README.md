@@ -153,20 +153,22 @@ config:
 flowchart TD
 
     Android["`Application Android
-    Habitants
-    & Volontaires`"]
+
+    Habitants & Volontaires`"]
 
     iPad["`Application iPad
+
     Administration`"]
 
     JavaFX["`Application JavaFX
     Super volontaires`"]
 
     API["`API SafeHood
-    Node.js • Express
-    TypeScript`"]
+
+    Node.js • Express • TypeScript`"]
 
     DB[("`MariaDB
+
     Base de données`")]
 
     Android -->|API REST / HTTPS| API
