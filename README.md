@@ -177,3 +177,57 @@ flowchart TD
 
     API -->|Requêtes SQL| DB
 ```
+
+## Fonctionnalités réalisées par l’équipe
+
+Le travail réalisé couvre l’ensemble de la plateforme, depuis la conception de l’API et de la base de données jusqu’au développement des différentes applications clientes.
+
+Les principales fonctionnalités mises en place sont :
+
+### Gestion des utilisateurs
+
+- création et authentification des comptes ;
+- consultation et modification des informations personnelles ;
+- gestion des différents rôles utilisateurs ;
+- gestion des habitants, volontaires et super volontaires ;
+- administration des comptes utilisateurs.
+
+### Gestion des quartiers
+
+- association des utilisateurs à un quartier ;
+- organisation des volontaires par quartier ;
+- attribution d’un super volontaire à un quartier ;
+- gestion des volontaires par le super volontaire responsable de son quartier.
+
+### Gestion des alertes
+
+- création d’une alerte par un habitant ;
+- consultation des alertes ;
+- suivi de l’état d’une alerte ;
+- affectation ou proposition d’une alerte à un volontaire ;
+- consultation des alertes proposées ou affectées aux volontaires ;
+- acceptation ou refus d’une intervention.
+
+### Gestion des interventions
+
+- suivi de la prise en charge d’une alerte ;
+- clôture d’une intervention ;
+- rédaction d’un rapport après intervention ;
+- consultation des rapports d’intervention ;
+- supervision de l’activité des volontaires.
+
+### Sécurité et contrôle des accès
+
+- authentification avec JWT ;
+- sécurisation des mots de passe avec Argon2 ;
+- contrôle des accès selon le rôle de l’utilisateur ;
+- restriction des fonctionnalités selon le type de compte ;
+- centralisation des accès aux données à travers l’API REST.
+
+### Mise en production
+
+- conteneurisation de la base de données avec Docker ;
+- déploiement de l’API sur un serveur VPS Ubuntu ;
+- utilisation de Nginx comme reverse proxy ;
+- gestion du processus Node.js avec PM2 ;
+- sécurisation des communications avec HTTPS.
