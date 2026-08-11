@@ -153,7 +153,8 @@ config:
 flowchart TD
 
     Android["`Application Android
-    Habitants & Volontaires`"]
+    Habitants
+    & Volontaires`"]
 
     iPad["`Application iPad
     Administration`"]
@@ -162,7 +163,8 @@ flowchart TD
     Super volontaires`"]
 
     API["`API SafeHood
-    Node.js • Express • TypeScript`"]
+    Node.js • Express
+    TypeScript`"]
 
     DB[("`MariaDB
     Base de données`")]
@@ -173,4 +175,3 @@ flowchart TD
 
     API -->|Requêtes SQL| DB
 ```
-
