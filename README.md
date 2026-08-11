@@ -148,7 +148,7 @@ Les applications clientes ne communiquent pas directement avec la base de donné
 ```mermaid
 flowchart TD
 
-    Android["Application Android<br/>Habitants & Volontaires"]
+    Android["Application Android<br\>Habitants & Volontaires"]
     iPad["Application iPad<br/>Administration"]
     JavaFX["Application JavaFX<br/>Super volontaires"]
 
