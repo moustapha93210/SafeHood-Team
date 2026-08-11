@@ -80,3 +80,49 @@ L’application lui permet notamment de :
 - suivre l’avancement des interventions ;
 - consulter les rapports d’intervention ;
 - superviser l’activité des volontaires de son quartier.
+
+
+## Technologies utilisées
+
+Le projet SafeHood repose sur plusieurs technologies adaptées aux différentes applications de la plateforme.
+
+### API
+
+- Node.js
+- TypeScript
+- Express
+- MariaDB
+- Docker
+- JWT pour l’authentification
+- Argon2 pour la sécurisation des mots de passe
+- pnpm pour la gestion des dépendances
+
+### Application Android
+
+- Kotlin
+- Android SDK
+- Android Studio
+- Communication avec l’API REST
+
+### Application iPad
+
+- Swift
+- SwiftUI
+- Xcode
+- Communication avec l’API REST
+
+### Application JavaFX
+
+- Java
+- JavaFX
+- Communication avec l’API REST
+
+### Infrastructure et outils
+
+- Git
+- GitHub
+- Docker
+- Nginx
+- PM2
+- VPS Ubuntu
+- HTTPS
