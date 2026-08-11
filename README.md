@@ -146,14 +146,26 @@ Les applications clientes ne communiquent pas directement avec la base de donné
 ### Schéma d’architecture
 
 ```mermaid
+---
+config:
+  htmlLabels: false
+---
 flowchart TD
 
-    Android["Application Android<br\>Habitants & Volontaires"]
-    iPad["Application iPad<br/>Administration"]
-    JavaFX["Application JavaFX<br/>Super volontaires"]
+    Android["`Application Android
+    Habitants & Volontaires`"]
 
-    API["API SafeHood<br/>Node.js • Express • TypeScript"]
-    DB[("MariaDB<br/>Base de données")]
+    iPad["`Application iPad
+    Administration`"]
+
+    JavaFX["`Application JavaFX
+    Super volontaires`"]
+
+    API["`API SafeHood
+    Node.js • Express • TypeScript`"]
+
+    DB[("`MariaDB
+    Base de données`")]
 
     Android -->|API REST / HTTPS| API
     iPad -->|API REST / HTTPS| API
