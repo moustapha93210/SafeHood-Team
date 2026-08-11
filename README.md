@@ -231,3 +231,14 @@ Les principales fonctionnalités mises en place sont :
 - utilisation de Nginx comme reverse proxy ;
 - gestion du processus Node.js avec PM2 ;
 - sécurisation des communications avec HTTPS.
+
+## Dépôts du projet
+
+Le code source de SafeHood est réparti dans plusieurs dépôts correspondant aux différentes composantes de la plateforme.
+
+| Composant | Description | Dépôt |
+|---|---|---|
+| API SafeHood | API REST, logique métier et accès à la base de données | [safehood-api](https://github.com/moustapha93210/safehood-api) |
+| Application Android | Application destinée aux habitants et aux volontaires | [safehood-android](https://github.com/moustapha93210/safehood-android) |
+| Application iPad | Application d’administration et de supervision | [safehood-ipad](https://github.com/moustapha93210/safehood-ipad) |
+| Application JavaFX | Client lourd destiné aux super volontaires | [safehood-javafx](https://github.com/moustapha93210/safehood-javafx) |
