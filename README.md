@@ -126,3 +126,39 @@ Le projet SafeHood repose sur plusieurs technologies adaptées aux différentes 
 - PM2
 - VPS Ubuntu
 - HTTPS
+
+## Architecture générale
+
+SafeHood repose sur une architecture centralisée autour d’une API REST.
+
+Les différentes applications clientes communiquent avec l’API afin d’accéder aux données et aux fonctionnalités de la plateforme.
+
+L’architecture générale est organisée de la manière suivante :
+
+- l’application Android est utilisée par les habitants et les volontaires ;
+- l’application iPad est utilisée pour l’administration et la supervision générale ;
+- l’application JavaFX est utilisée par les super volontaires pour gérer les volontaires de leur quartier ;
+- l’API centralise la logique métier, l’authentification, les autorisations et les échanges avec la base de données ;
+- MariaDB assure le stockage persistant des données.
+
+Les applications clientes ne communiquent pas directement avec la base de données. Elles passent toutes par l’API SafeHood, ce qui permet de centraliser les règles métier et de sécuriser l’accès aux données.
+
+### Schéma d’architecture
+
+```mermaid
+flowchart TD
+
+    Android["Application Android<br/>Habitants & Volontaires"]
+    iPad["Application iPad<br/>Administration"]
+    JavaFX["Application JavaFX<br/>Super volontaires"]
+
+    API["API SafeHood<br/>Node.js • Express • TypeScript"]
+    DB[("MariaDB<br/>Base de données")]
+
+    Android -->|API REST / HTTPS| API
+    iPad -->|API REST / HTTPS| API
+    JavaFX -->|API REST / HTTPS| API
+
+    API -->|Requêtes SQL| DB
+```
+
